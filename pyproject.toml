@@ -1,0 +1,20 @@
+[project]
+name = "parse-coe"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Kere", email = "morris.okesh@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "mysql-connector-python>=26.7.0",
+    "pymupdf>=1.28.2",
+]
+
+[project.scripts]
+parse-coe = "parse_coe.app:main"
+
+[build-system]
+requires = ["uv_build>=0.12.3,<0.13.0"]
+build-backend = "uv_build"
